@@ -4,7 +4,7 @@ import numpy as np
 
 # Sidebar
 st.sidebar.title("Car Price Prediction")
-st.sidebar.image("https://github.com/SeifEldeen259/Cars-Price-Predection/blob/main/Cars.jpg?raw=true", use_column_width=True)
+st.sidebar.image("https://github.com/SeifEldeen259/Cars-Price-Predection/blob/main/Cars.jpg?raw=true", use_container_width=True)
 st.sidebar.markdown("### Enter Car Details:")
 year = st.sidebar.number_input("Year of Manufacture", min_value=1900, max_value=2025, step=1, value=2015)
 km_driven = st.sidebar.number_input("Kilometers Driven", min_value=0, step=1, value=50000)
@@ -42,7 +42,7 @@ input_features = np.array([[
 
 # Main Page
 st.title("Car Price Prediction App")
-st.image("https://github.com/SeifEldeen259/Cars-Price-Predection/blob/main/bugatti.jpg?raw=true", use_column_width=True)
+st.image("https://github.com/SeifEldeen259/Cars-Price-Predection/blob/main/bugatti.jpg?raw=true", use_container_width=True)
 st.markdown("""
 ### About the Model
 This car price prediction tool leverages a sophisticated machine learning model trained on extensive car data. 
