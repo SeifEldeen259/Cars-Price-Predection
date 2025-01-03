@@ -7,7 +7,7 @@ model = joblib.load('car_model.pkl')
 
 # Sidebar
 st.sidebar.title("Car Price Prediction")
-st.sidebar.image("cars.jpg", use_column_width=True)
+st.sidebar.image("https://github.com/SeifEldeen259/Cars-Price-Predection/blob/main/Cars.jpg?raw=true", use_column_width=True)
 st.sidebar.markdown("### Enter Car Details:")
 year = st.sidebar.number_input("Year of Manufacture", min_value=1900, max_value=2025, step=1, value=2015)
 km_driven = st.sidebar.number_input("Kilometers Driven", min_value=0, step=1, value=50000)
@@ -45,7 +45,7 @@ input_features = np.array([[
 
 # Main Page
 st.title("Car Price Prediction App")
-st.image("bugatti.jpg", use_column_width=True)
+st.image("https://github.com/SeifEldeen259/Cars-Price-Predection/blob/main/bugatti.jpg?raw=true", use_column_width=True)
 st.markdown("""
 ### About the Model
 This car price prediction tool leverages a sophisticated machine learning model trained on extensive car data. 
@@ -54,7 +54,7 @@ The model considers multiple factors such as car age, mileage, engine power, and
 to deliver reliable price estimates. Its goal is to help users make informed decisions when buying or selling cars.
 """)
 
-st.image("Car.jpg", use_column_width=True)
+st.image("https://github.com/SeifEldeen259/Cars-Price-Predection/blob/main/Car.jpg?raw=true", use_column_width=True)
 
 st.markdown("""
 ### Information Needed
