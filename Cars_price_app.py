@@ -51,7 +51,7 @@ The model considers multiple factors such as car age, mileage, engine power, and
 to deliver reliable price estimates. Its goal is to help users make informed decisions when buying or selling cars.
 """)
 
-st.image("https://github.com/SeifEldeen259/Cars-Price-Predection/blob/main/Car.jpg?raw=true", use_column_width=True)
+st.image("https://github.com/SeifEldeen259/Cars-Price-Predection/blob/main/Car.jpg?raw=true", use_container_width=True)
 
 st.markdown("""
 ### Information Needed
