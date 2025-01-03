@@ -63,7 +63,7 @@ To predict the price, please provide:
 """)
 
 # Load the model (which includes preprocessing steps)
-model = joblib.load('car_model.pkl')
+model = joblib.load("car_model.pkl")
 
 # Prediction Result Display
 if st.sidebar.button("Predict"):
