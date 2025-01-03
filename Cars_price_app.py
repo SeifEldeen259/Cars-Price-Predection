@@ -1,6 +1,7 @@
 import streamlit as st
 import joblib
 import numpy as np
+import os
 
 # Sidebar
 st.sidebar.title("Car Price Prediction")
@@ -62,8 +63,17 @@ To predict the price, please provide:
 - Additional specifications like mileage, engine power, and seating capacity.
 """)
 
-# Load the model (which includes preprocessing steps)
-model = joblib.load("car_model.pkl")
+try:
+    # Dynamically locate the model
+    model_path = os.path.join(os.path.dirname(__file__), 'car_model.pkl')
+    model = joblib.load(model_path)
+    st.write("Model loaded successfully!")
+except FileNotFoundError:
+    st.error("Model file not found. Ensure 'car_model.pkl' is present in the same directory.")
+except Exception as e:
+    st.error(f"An error occurred: {e}")
+    st.write("Deployment environment details:", os.listdir(os.path.dirname(__file__)))
+
 
 # Prediction Result Display
 if st.sidebar.button("Predict"):
