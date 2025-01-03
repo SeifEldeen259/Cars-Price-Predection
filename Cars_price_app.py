@@ -2,9 +2,6 @@ import streamlit as st
 import joblib
 import numpy as np
 
-# Load the model (which includes preprocessing steps)
-model = joblib.load('car_model.pkl')
-
 # Sidebar
 st.sidebar.title("Car Price Prediction")
 st.sidebar.image("https://github.com/SeifEldeen259/Cars-Price-Predection/blob/main/Cars.jpg?raw=true", use_column_width=True)
@@ -64,6 +61,9 @@ To predict the price, please provide:
 - Fuel type, transmission, and ownership details.
 - Additional specifications like mileage, engine power, and seating capacity.
 """)
+
+# Load the model (which includes preprocessing steps)
+model = joblib.load('car_model.pkl')
 
 # Prediction Result Display
 if st.sidebar.button("Predict"):
